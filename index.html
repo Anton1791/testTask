@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+    <meta name="viewport" content="width=830" </head>
+
+<body>
+    <div class="wrapper">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <div class="button-menu">
+            <button class="button-choise-document btn">Выберите документ</button>
+            <button class="dutton-edit-document btn">Создать документ</button>
+        </div>
+        <div class="container">
+            <div class="content content-choice-document">
+                <h1>Информация о документе</h1>
+                <form action="#" class="form-doc">
+                    <div class="header-doc">
+                        <label for="type-choice">Выберите документ</label>
+                        <select id="type-choice">
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="name" id="name-doc">Имя документа</label>
+                        <input id="name">
+                    </div>
+                    <div class="form-row">
+                        <label for="author">Автор документа</label>
+                        <input id="author">
+                    </div>
+                    <div class="form-row">
+                        <label for="specification">Спецификация</label>
+                    <input id="specification">
+                    </div>
+                    <div class="form-row">
+                        <label for="type-document">Тип документа</label>
+                        <select id="type-document">
+                            <option value="electro">Електротехническая документация</option>
+                            <option value="stroyWork">Строительные работы</option>
+                            <option value="estimate">Смета</option>
+                        </select>
+                    </div>
+                    <div class="comment-doc">
+                        <p>Комментарий документа:</p>
+                        <textarea id="comments" placeholder="Введите ваш комментарий"></textarea>
+                    </div>
+                    <div class="button">
+                        <button id="delete_btn">Удалить документ</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content content-create-document">
+                <h1>Создайте новый документ:</h1>
+                <form action="#">
+                    <div class="form-row">
+                        <label for="name" id="name-doc">Имя документа</label>
+                        <input id="name" class="create-name" placeholder="Введите имя документа *" font-size="2px">
+                    </div>
+                    <div class="form-row">
+                        <label for="author">Автор документа</label>
+                        <input id="author" class="create-author" placeholder="Введите автора документа *">
+                    </div>
+                    <div class="form-row">
+                        <label for="specification">Спецификация</label>
+                        <input id="specification" class="create-specification " placeholder="Введите спецификацию документа *">
+                    </div>
+                    <div class="form-row">
+                        <label for="type-document">Выберите тип документа</label>
+                        <select id="type-document" class="create-type">
+                            <option class="option" value="electro">Електротехническая документация</option>
+                            <option class="option" value="stroyWork">Строительные работы</option>
+                            <option class="option" value="estimate">Смета</option>
+                        </select>
+                    </div>
+                    <div class="comment-doc">
+                        <p>Комментарий документа:</p>
+                        <textarea class='create-comment' id="comments" placeholder="Введите ваш комментарий"></textarea>
+                    </div>
+                    <button id="delete_btn" class='button-save'>Сохранить документ</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
